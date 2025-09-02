@@ -1,0 +1,1 @@
+//handles showing the cards with the random pokemon image

@@ -4,4 +4,7 @@ Project goal: Using side effects to retain the player score and trigger certain 
 
 Project start: 
 1. Projec set up
-2.
+2. Setting up files: 
+[card.jsx] : handles rendering 
+[app.jsx] : fetches Pokémon, holds state, passes props
+[score.jsx] : shows scores
