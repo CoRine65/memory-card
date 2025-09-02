@@ -1,5 +1,5 @@
 import { use, useEffect, useState } from 'react'
-
+import Card from './card';
 import './App.css'
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
           return { id: pokeData.id, name: pokeData.name, img: pokeData.sprites.front_default};
         })
       );//end detailed
+      console.log(detailed)
       setCards(detailed)
     };//end of fetch
     fetchPokemon();
@@ -31,11 +32,11 @@ function App() {
 
 
   return (
-    <main>
+    <div className='grid-container'>
       {cards.map((card) => (
         <Card key={card.id} name={card.name} img={card.img} />
       ))}
-    </main>
+    </div>
   )
 }
 
