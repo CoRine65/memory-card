@@ -1,4 +1,4 @@
-import { use, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Card from './card';
 import './App.css'
 
@@ -30,11 +30,35 @@ function App() {
     fetchPokemon();
   }, [])//end
 
+//handle card click
+const handleClick = (id) => {
+  if (clicked.includes(id)){
+    //click duplicate end game
+    setScore(0);
+    setClicked([]);
+  } else {
+    //new click
+    const newScore = score + 1;
+    setScore(newScore);
+    setClicked([...clicked, id]);
+
+    if (newScore > bestScore){
+      setBestScore(newScore)
+    }
+    //shuffle cards
+    setCards([...cards].sort(() => Math.random() - 0.5));
+
+  } //end else
+}//end click
 
   return (
     <div className='grid-container'>
       {cards.map((card) => (
-        <Card key={card.id} name={card.name} img={card.img} />
+        <Card key={card.id} 
+        name={card.name} 
+        img={card.img} 
+        onClick={() => handleClick(card.id)}
+        />
       ))}
     </div>
   )

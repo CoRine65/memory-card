@@ -11,3 +11,4 @@ Project start:
 3. Defined the states in app.jsx
 4. created the fetch call to the pokemon api
 5. made sure the api was working and gave small css styling: encountered an error, the images we stuck to left side of the browser: forgot to include body in the layout process
+6. Handle the on click logic

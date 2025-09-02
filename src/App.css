@@ -5,8 +5,8 @@ body {
   margin: 0;
   font-family: sans-serif;
   display: flex;
-  justify-content: center;  /* center the grid horizontally */
-  align-items: flex-start;  /* start from top of viewport */
+  justify-content: center;  
+  align-items: flex-start; 
   min-height: 100vh;
   padding: 2rem;
   color: #333;
@@ -14,31 +14,31 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  max-width: 800px;        /* keeps grid from stretching too wide */
+  max-width: 800px;        
   width: 100%;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;      /* image at top */
+  justify-content: flex-start;      
   align-items: center;
   background: #fff;
   border: 2px solid #333;
   border-radius: 8px;
   box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
   padding: 0.5rem 1rem;
-  height: 280px;                    /* increase card height */
-  width: 180px;                     /* optional: slightly wider card */
+  height: 280px;                    
+  width: 180px;                    
   cursor: pointer;
-  position: relative;               /* for caption strip */
+  position: relative;               
 }
 
 .card img {
-  width: 140px;          /* force image width */
-  height: 140px;         /* force image height */
+  width: 140px;          
+  height: 140px;         
   object-fit: contain;
   margin-bottom: 0.5rem;
 }
