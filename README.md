@@ -8,3 +8,5 @@ Project start:
 [card.jsx] : handles rendering 
 [app.jsx] : fetches Pokémon, holds state, passes props
 [score.jsx] : shows scores
+3. Defined the states in app.jsx
+4. created the fetch call to the pokemon api
